@@ -1,0 +1,49 @@
+
+
+<div id = "banner"></div>
+<div id = "columns">
+<div id = "side">
+  <ul>
+    <li> <%= link_to 'Home', new_product_path %> </li>
+    <li> <%= link_to 'Questions', new_product_path %> </li>
+    <li> <%= link_to 'News', new_product_path %> </li>
+    <li> <%= link_to 'Contact', new_product_path %> </li>
+  </ul>
+</div>
+<div id = "main" class="shopper">
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Product Catalog</h1>
+
+<table>
+  <tbody>
+    <% @products.each do |product| %>
+
+      <tr class = "entry">
+        <td><%= image_tag("/#{product.image}") %></td>
+
+        <td>
+          <%= tag.h3 "#{product.name}" %>
+
+          <p><%= sanitize(product.description) %></p>
+          <div class="price_line">
+          <span class="price"><%= product.price %></span>
+          </div>
+        </td>
+        <td><%= link_to 'Show', product %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+</div>
+</div>
+
+
