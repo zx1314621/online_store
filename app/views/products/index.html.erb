@@ -12,7 +12,7 @@
   <tbody>
     <% @products.each do |product| %>
 
-      <tr>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
         <td><%= image_tag("/#{product.image}", :size => "150x200") %></td>
 
         <td><%= tag.h3 "#{product.name}" %>
