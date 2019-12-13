@@ -1,5 +1,4 @@
 class LineitemsController < ApplicationController
-
   before_action :set_lineitem, only: [:show, :edit, :update, :destroy]
 
   # GET /lineitems
