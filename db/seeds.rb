@@ -24,3 +24,5 @@ A novel of love, courage, and danger unfolds as World War II’s brightest heroi
 Product.create(name: 'White Rose, Black Forest', description: 'An Amazon Charts bestseller.
 
 In the shadows of World War II, trust becomes the greatest risk of all for two strangers.', image: './assets/White Rose, Black Forest.jpg', price: '7.48')
+
+User.create(name:"lxy", password:"lxy")
