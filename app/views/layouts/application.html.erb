@@ -36,12 +36,13 @@
  <li><%= link_to 'Users', users_path %></li>
  <li> <%= link_to 'Cart', carts_path %> </li>
  <li> <%= link_to 'Line_item', lineitems_path %> </li>
+ <li> <a href="/shopper/index">Shopper</a> </li>
  </ul>
  <%= button_to 'Logout', logout_path, method: :delete
 %>
  <%else%>
   <ul>
-    <li> <a href="../shopper/index">Shopper</a> </li>
+    <li> <a href="/shopper/index">Shopper</a> </li>
     <%= button_to 'Login', login_path, method: :get%>
   </ul>
  <% end %> 
