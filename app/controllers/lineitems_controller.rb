@@ -31,8 +31,8 @@ class LineitemsController < ApplicationController
  
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
-        format.json { render json: @line_item, status: :created, location: @line_item }
+        format.html { redirect_to "/shopper/index", notice: 'Line item was successfully created.' }
+        format.json { render :show, status: :created, location: @line_item } 
       else
         format.html { render action: "new" }
         format.json { render json: @line_item.errors, status: :unprocessable_entity }
