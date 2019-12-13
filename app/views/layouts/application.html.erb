@@ -10,6 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+    <div id = "banner"> Our product <%= image_tag("/./assets/logo.jpg", :size => "150x45")%></div>
+<div id = "columns"> 
+<div id = "side"> 
+  <div id="cart">
+    <% if @cart %>
+         <%= render @cart %>
+    <% else %>
+         <p>shopping cart is empty</p>
+    <% end %>
+  </div>
+  <ul>
+    <li> <a href="../shopper/index">Shopper</a> </li>
+    <li> <%= link_to 'Product', products_path %> </li>
+    <li> <%= link_to 'Cart', carts_path %> </li>
+    <li> <%= link_to 'Line_item', lineitems_path %> </li>
+  </ul>
+</div>
+
+<div id = "main">
+<%= yield %>
+</div>
+
+</body>
 </html>

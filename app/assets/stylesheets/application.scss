@@ -1,0 +1,138 @@
+  // Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#banner {
+background: #efc780; padding: 10px; border-bottom: 2px solid; font: 40px/40px "Arial"; color: #282;
+text-align: center;
+img {
+        float: left;
+    }
+}
+#notice {
+color: #000 !important; border: 2px solid red; padding: 1em;
+margin-bottom: 2em; background-color: #f0f0f0; font: bold smaller sans-serif;
+}
+#columns {
+    background: #9c947a;
+#main {
+margin-left: 17em; padding: 1em; background: white;
+}
+    #side {
+        float: left;
+        padding: 1em 2em;
+        width: 13em;
+        background: #9c947a;
+
+        form, div {display: inline;}
+input {font-size: small;}
+#cart {font-size: small; color: white;
+table {
+border-top: 1px dotted #599; border-bottom: 1px dotted #599; margin-bottom: 10px;
+} }
+ul {
+ 
+padding: 0;
+li {
+list-style: none;
+a{
+color: #bfb;
+font-size: small; }
+} }
+} }
+
+.products {
+table {
+border-collapse: collapse; }
+  table tr td {
+    padding: 5px;
+vertical-align: top; }
+.list_image { width: 60px;
+    height: 70px;
+  }
+.list_description { width: 60%;
+    dl {
+      margin: 0;
+}
+dt {
+color: #244; font-weight: bold; font-size: larger;
+}
+dd {
+margin: 0; }
+}
+.list_actions { font-size: x-small; text-align: right; padding-left: 1em;
+}
+.list_line_even {
+    background:   #e0f8f8;
+  }
+.list_line_odd {
+    background:   #f8b0f8;
+  }
+}
+
+
+
+
+.shopper {
+h1 {
+margin: 0; padding-bottom: 0.5em; font: 150% sans-serif;
+ 
+color: #226;
+border-bottom: 3px dotted #77d; }
+/* An entry in the store catalog */ .entry {
+overflow: auto;
+margin-top: 1em;
+border-bottom: 1px dotted #77d; min-height: 100px;
+img {
+width: 80px; margin-right: 5px; margin-bottom: 5px; position: absolute;
+}
+h3 {
+font-size: 120%; font-family: sans-serif; margin-left: 100px; margin-top: 0; margin-bottom: 2px; color: #227;
+}
+p, div.price_line { margin-left: 100px; margin-top: 0.5em; margin-bottom: 0.8em;
+}
+form, div {
+      display: inline;
+
+.add_to_cart {
+
+background-color: #0088A8;
+
+border: none;
+
+color: white;
+
+padding: 15px 32px;
+
+text-align: center;
+
+text-decoration: none;
+
+display: inline-block;
+
+font-size: 10px;
+
+margin: 0px 0px 10px 0px;
+
+cursor: pointer;
+
+}
+    }
+.price {
+color: #44a; font-weight: bold; margin-right: 3em;
+} }
+}
+
+.cart_title{
+  font: 120%;
+  font-weight: bold;
+}
+ 
+.item_price, .total_line{
+  text-align: right;
+  padding: 0 0 0 1em;
+}
+ 
+.total_line .total_cell{
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
